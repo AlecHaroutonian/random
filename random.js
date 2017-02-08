@@ -5,7 +5,11 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+    makeCircle(150, 50, 10, "blue",0.25)
+    makeCircle(150, 40, 10, "blue",0.25)
+    makeCircle(150, 30, 10, "blue",0.25)
+
+
 }
 
 
@@ -13,7 +17,10 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    
+    makeCircle(100, 50, 10, "red",0.25)
+    makeCircle(100, 40, 10, "red",0.25)
+    makeCircle(100, 30, 10, "red",0.25)
+
 }
 
 
@@ -21,7 +28,11 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+    makeCircle(50, 50, 10, "red",0.25)
+    makeCircle(50, 40, 10, "red",0.25)  
+    makeCircle(50, 40, 10, "red",0.25)
+
+
 }
 
 
@@ -31,30 +42,15 @@ function createThirdScene() {
 // FILL IN THIS FUNCTION!
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
-    // Generate a random number between 0 and 1, and store it in a variable.
-    
-    // If the number is less than 0.33, call the function to create your first scene.
-    
-    
-    
-    // Else, if the number is less than 0.67, call the function to create your second scene.
-    
-    
-    
-    // Else, call the function to create your third scene.
-    
-    
-    
+    var Number1 = Math.random()
+    var Number2 = Math.random()
+ if (Number1 > 0.33 && Number2 > 0.9) {
+   createFirstScene
+} else if (Number1 > 0.67 || Number2 > 0.9) {
+   createSecondScene
+} else {
+createThirdScene}
 }
-
-
-
-// DO NOT EDIT ANYTHING BELOW THIS LINE!
-// These are the functions you should call to
-// easily create shapes in JavaScript. Feel free
-// to check them out if you're curious how they
-// work, but don't change them!
-// <3 Ms. Squires
 function makeCircle(cx, cy, r, fill, opacity) {
   var circle = document.createElementNS(namespace, "circle")
   circle.setAttribute("cx", cx)
@@ -162,4 +158,4 @@ function makeImage(url, x, y, width, height, opacity) {
   var canvas = document.getElementById("canvas")
   canvas.appendChild(image)
   return image
-}
+} 
