@@ -1,5 +1,58 @@
-#button-container {
-    text-align: center;
+@import 'https://fonts.googleapis.com/css?family=Chelsea+Market|Josefin+Sans|Open+Sans';
+
+button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+button {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+}
+span {
+  color: violet;
+}
+
+body {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/bg2.png");
+  min-width: 650px;
+}
+
+h1 {
+  color: #CC77FF;
+  font-size: 50px;
+  font-family: "Chelsea Market";
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 25px;
+  font-family: "Josefin Sans";
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+  font-size: 25px;
+  font-family: "Josefin Sans";
+  margin-left: 50px;
+}
+
+p, ol {
+  color: white;
+  font-family: "Open Sans";
+  margin-left: 50px;
+}
+
+svg {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg");
+  background-size: 100%;
+  display: block;
+  margin: auto;
 }
 
 h1 {

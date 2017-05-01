@@ -1,56 +1,49 @@
 var namespace = "http://www.w3.org/2000/svg"
 
-
-// Fill in this function so that it draws something using SVG shapes!
-// You need to use at least 3 different types of shape.
-// Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
-function createFirstScene() {
-    makeCircle(150, 50, 10, "blue",0.25)
-    makeCircle(150, 40, 10, "blue",0.25)
-    makeCircle(150, 30, 10, "blue",0.25)
-
-
+function createFirstScene() {                    
+makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,300,300) 
+ makeImage("http://2.bp.blogspot.com/-QFNm9_nJxHk/VincRgdRdwI/AAAAAAAAARU/99Ux57XERSo/s1600/in%2Ba%2Bnutshell%2Bkurzgesagt%2Bearth%2Blogo%2Bwith%2Btransparent%2Bbackground.png",70,40,30,50)
+ makeImage("",90,50,50,50)
+ makeCircle(50,10,5,"gray",0.99)
+ makeCircle(50,10,5,"gray",0.99)
+ makeCircle(50,30,20,"red",0.69)
+makeCircle(50,30,20,"yellow",0.29)
+makeCircle(50,30,20,"orange",0.29)
 }
 
 
-// Fill in this function so that it draws something using SVG shapes!
-// You need to use at least 3 different types of shape.
-// Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    makeCircle(100, 50, 10, "red",0.25)
-    makeCircle(100, 40, 10, "red",0.25)
-    makeCircle(100, 30, 10, "red",0.25)
-
+makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,300,300)  
+makeImage("https://thecliparts.com/wp-content/uploads/2016/07/planet-clipart-9.png",75,50,50,50)
+makeCircle(130,80,5,"gray",0.99)
+makeCircle(60,90,5,"gray",0.99)
+makeCircle(50,30,20,"red",0.69)
+makeCircle(50,30,20,"yellow",0.29)
+makeCircle(50,30,20,"orange",0.29)
 }
 
-
-// Fill in this function so that it draws something using SVG shapes!
-// You need to use at least 3 different types of shape.
-// Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    makeCircle(50, 50, 10, "red",0.25)
-    makeCircle(50, 40, 10, "red",0.25)  
-    makeCircle(50, 40, 10, "red",0.25)
-
-
+ makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,300,300) 
+ makeImage("http://www.clipartkid.com/images/414/saturn-clip-art-at-clker-com-vector-clip-art-online-royalty-free-mBUC1w-clipart.png",90,50,50,50)
+ makeCircle(130,50,5,"gray",0.99)
+ makeCircle(155,60,5,"gray",0.99)
+ makeCircle(50,30,20,"red",0.69)
+makeCircle(50,30,20,"yellow",0.29)
+makeCircle(50,30,20,"orange",0.29)
+ 
 }
 
-
-
-
-
-// FILL IN THIS FUNCTION!
-// This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     var Number1 = Math.random()
-    var Number2 = Math.random()
- if (Number1 > 0.33 && Number2 > 0.9) {
-   createFirstScene
-} else if (Number1 > 0.67 || Number2 > 0.9) {
-   createSecondScene
+ if (Number1 < 0.33) {
+   createFirstScene()
+} else if (Number1 < 0.67) {
+   createSecondScene()
 } else {
-createThirdScene}
+createThirdScene()
 }
+}
+
 function makeCircle(cx, cy, r, fill, opacity) {
   var circle = document.createElementNS(namespace, "circle")
   circle.setAttribute("cx", cx)
