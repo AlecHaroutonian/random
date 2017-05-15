@@ -1,46 +1,51 @@
 var namespace = "http://www.w3.org/2000/svg"
 
 function createFirstScene() {                    
-makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,300,300) 
- makeImage("http://2.bp.blogspot.com/-QFNm9_nJxHk/VincRgdRdwI/AAAAAAAAARU/99Ux57XERSo/s1600/in%2Ba%2Bnutshell%2Bkurzgesagt%2Bearth%2Blogo%2Bwith%2Btransparent%2Bbackground.png",70,40,30,50)
- makeImage("",90,50,50,50)
- makeCircle(50,10,5,"gray",0.99)
- makeCircle(50,10,5,"gray",0.99)
- makeCircle(50,30,20,"red",0.69)
-makeCircle(50,30,20,"yellow",0.29)
-makeCircle(50,30,20,"orange",0.29)
+ makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,200,200)
+ makeImage("http://vignette1.wikia.nocookie.net/animal-jam-clans-1/images/d/d2/IMAGENAMEHERE.png/revision/latest?cb=20160624230052",1,50,50,50)
+ makeImage("https://68.media.tumblr.com/ef9c843c64a85df48f363986a0e1457e/tumblr_mk3i3enxVN1ra707mo1_500.png",150,59,50,49)
+makeImage("http://vignette3.wikia.nocookie.net/youtubepoop/images/a/a2/Mr-Krabs.gif/revision/latest?cb=20130105174003",20,-2,50,50)
+makeImage("http://vignette3.wikia.nocookie.net/p__/images/4/47/Plankton.png/revision/latest?cb=20160826213027&path-prefix=protagonist",75,70,50,30)
+makeImage("",50,50,50,50)
+makeImage("",50,50,50,50)
+makeImage("",50,50,50,50)
+
 }
 
 
 function createSecondScene() {
-makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,300,300)  
-makeImage("https://thecliparts.com/wp-content/uploads/2016/07/planet-clipart-9.png",75,50,50,50)
-makeCircle(130,80,5,"gray",0.99)
-makeCircle(60,90,5,"gray",0.99)
-makeCircle(50,30,20,"red",0.69)
-makeCircle(50,30,20,"yellow",0.29)
-makeCircle(50,30,20,"orange",0.29)
+makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,200,200)
+makeImage("http://i1.kym-cdn.com/photos/images/original/000/520/657/4aa.gif",1,50,50,50)
+makeImage("http://www.clker.com/cliparts/2/6/d/8/1194986432495548228pimp_hat_james_birkett_01.svg.hi.png",-5,40,53,20)
+makeImage("https://lh3.googleusercontent.com/-C4bi7bGK-dD-gh6JIZGg1hWzdkcJgZmCQ7YTSVFtEe0oo7lFA",150,56,50,50)
+makeImage("https://t6.rbxcdn.com/ed5a9f705605931bd6fb73b0532927b9",150,44,50,40)
+
+makeImage("http://vignette3.wikia.nocookie.net/spongebob/images/0/0e/Sir_Pinch-a-Lot.png/revision/latest?cb=20160911024759",20,-5,50,50)
+
+makeImage("http://vignette3.wikia.nocookie.net/spongebob/images/1/11/Plank-Ton.png/revision/latest?cb=20150403001946",70,22,80,80)
+
+makeImage("https://t2.rbxcdn.com/ba38f1c787c7bd727169ced42a8da539",90,27,30,25)
+
+makeImage("https://westernoutfittersaz.com/pub/media/catalog/product/cache/1/image/700x560/e9c3970ab036de70892d86c6d221abfe/g/u/gucci_370543_115-0a6_2.png",78,43,50,20)
+
+makeImage("http://www.timberland.co.za/4771-home_default/youth-timberland-icon-6-inch-premium-boot.jpg",107,67,40,40)
+
+makeImage("https://artimg.footway.com/01/559/55996-01/front/705/705/55996-01.png",73,73,40,28)
+
+makeImage("",50,50,50,50)
+
+makeImage("",50,50,50,50)
+
 }
 
-function createThirdScene() {
- makeImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/695916/spce.jpg",0,0,300,300) 
- makeImage("http://www.clipartkid.com/images/414/saturn-clip-art-at-clker-com-vector-clip-art-online-royalty-free-mBUC1w-clipart.png",90,50,50,50)
- makeCircle(130,50,5,"gray",0.99)
- makeCircle(155,60,5,"gray",0.99)
- makeCircle(50,30,20,"red",0.69)
-makeCircle(50,30,20,"yellow",0.29)
-makeCircle(50,30,20,"orange",0.29)
- 
-}
+
 
 function createRandomScene() {
     var Number1 = Math.random()
  if (Number1 < 0.33) {
    createFirstScene()
-} else if (Number1 < 0.67) {
-   createSecondScene()
 } else {
-createThirdScene()
+   createSecondScene()
 }
 }
 
